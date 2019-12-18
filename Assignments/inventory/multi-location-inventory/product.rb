@@ -20,8 +20,8 @@ class Product
         puts "Please enter the id of inventory you would like to add this product to:\n"
         inv_id = gets.chomp.to_i 
             $inv_array.each do |item| 
-                puts item.fetch(:invId)   
-                puts inv_id               
+#                puts item.fetch(:invId)   
+#                puts inv_id               
                 if item.fetch(:invId) == inv_id
                     
                     if item[:invProductList] == nil
